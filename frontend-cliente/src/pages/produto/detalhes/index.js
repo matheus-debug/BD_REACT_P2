@@ -20,22 +20,17 @@ export default class Produto extends Component {
     render() {
         const { produto, index } = this.state;
  
-        if (produto.ativo) {
-            produto.ativo = "Cliente Ativo";
-        } else {
-            produto.ativo = "Cliente Inativo";
-        }
- 
         return (
-            <div className="cliente-info">
+            <div className="produto-info">
                 <h1> {produto.nome} </h1>
                 <h1> {produto.descricao} </h1>
                 <h1> {produto.preco} </h1>
                 <h1> {produto.estoque} </h1>
                 <br />
                 <Link to={`/produtos`}> Voltar </Link> <br />
-                <Link to={`/editarProdutos/${produto.id}`}> Editar </Link> <br />
-                <Link to={`/deletarProdutos/${produto.id}`}> Deletar </Link> <br />
+                <Link to={`/editarProduto/${produto.id}`}> Editar </Link> <br />
+                <Link to={`/deletarProduto/${produto.id}`}> Deletar </Link> <br />
+
             </div >
         );
     }

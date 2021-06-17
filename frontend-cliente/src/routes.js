@@ -1,17 +1,21 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
  
-import MainCliente from './pages/cliente/main';
-import DetalhesCliente from './pages/cliente/detalhes';
-import CriarCliente from './pages/cliente/criar';
+import MainProduto from './pages/produto/main';
+import DetalhesProduto from './pages/produto/detalhes';
+import CriarProduto from './pages/produto/criar';
+import EditarProduto from './pages/produto/editar';
+import DeletarProduto from './pages/produto/deletar';
  
 const Routes = () => (
  
     <BrowserRouter>
         <Switch>
-            <Route exact path="/clientes" component={MainCliente} />
-            <Route path="/clientes/:id" component={DetalhesCliente} />
-            <Route path="/criarCliente" component={CriarCliente} />
+            <Route exact path="/produtos" component={MainProduto} />
+            <Route path="/produtos/:id" component={DetalhesProduto} />
+            <Route path="/criarProduto" component={CriarProduto} />
+            <Route path="/editarProduto/:id" component={EditarProduto} />
+            <Route path="/deletarProduto/:id" component={DeletarProduto} />
         </Switch>
     </BrowserRouter>
 )

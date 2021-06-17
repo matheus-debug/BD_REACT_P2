@@ -1,4 +1,4 @@
-.cliente-info {
+.produto-info {
     max-width: 700px;
     margin: 20px auto 0;
     padding: 0 20px;
@@ -7,7 +7,7 @@
     border-radius: 5px;
 }
  
-.cliente-info h1 {
+.produto-info h1 {
     font-size: 32px;
     color: #ddd;
     line-height: 24px;
