@@ -31,11 +31,6 @@
       "react-app/jest"
     ]
   },
-
-    "buildpacks":
-      {
-        "url": "mars/create-react-app"
-      },
   "browserslist": {
     "production": [
       ">0.2%",
