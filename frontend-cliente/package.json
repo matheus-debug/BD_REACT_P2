@@ -31,14 +31,6 @@
       "react-app/jest"
     ]
   },
-    "proxy": {
-      "/api": {
-        "target": "http://localhost:8000",
-        "pathRewrite": {
-          "^/api": "/"
-        }
-      }
-    },
   "browserslist": {
     "production": [
       ">0.2%",
